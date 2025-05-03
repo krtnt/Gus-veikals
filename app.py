@@ -19,11 +19,8 @@ def products():
     )
     products = cur.fetchall()
     conn.close()
+    print(products[0]['name'])
     return render_template("products.html", products=products)
-
-@app.route("/par-mums")
-def about():
-    return render_template("about.html")
 
 @app.route("/produkti/<int:product_id>")
 def products_show(product_id):
