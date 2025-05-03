@@ -9,6 +9,11 @@
                         {{ product['name'] }} <br>
                         <img src="{{ url_for('static', filename='images/' + product['image']) }}" height="100" width="100">
                     </a>
+                    <form action="/produkti/{{ product['id'] }}/delete" method="post">
+                        <button type="submit">
+                            Izdzēst produktu
+                        </button>    
+                    </form>
                 </li>
             {% endfor %}
     </ul>
