@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.JPG') }}">
 </head>
 <body>
     <header>
-        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+        <img style="border:5px solid black;" src="{{ url_for('static', filename='images/favicon.JPG') }}" alt="Logo" class="logo">
         <nav>
             <a href="/">Sākums</a>
             <a href="/produkti">Produkti</a>
@@ -18,7 +18,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>&copy; {{ 2025 }} MiniVeikals</p>
+        <p>&copy; {{ 2025 }} Gus-Veikals</p>
     </footer>
 </body>
 </html>

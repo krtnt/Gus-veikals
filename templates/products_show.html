@@ -3,10 +3,10 @@
 {% block content %}
     <h1>{{ product['name'] }}</h1>
     <img src="{{ url_for('static', filename='images/' + product['image']) }}" height="500" width="500">
-    <p>Cena: {{ product['price'] }}$</p>
-    <p>Galvenā sastāvdaļa: {{ ingridient['name'] }}</p>
+    <h3>Cena: {{ product['price'] }}$</h3>
+    <p>Galvenā sastāvdaļa:<strong> {{ ingridient['name'] }}</strong></p>
     {% if allergen['name'] != null %}
-        <p>Allergēns: {{ allergen['name'] }}</p>
+        <p>Allergēns:<strong> {{ allergen['name'] }}</strong></p>
     {% endif %}
-    <p>Toksikuma līmenis: {{ toxicity['level'] }}</p>
+    <p>Toksikuma līmenis:<strong style="color:hsla(0,100%,50%,1);"> {{ toxicity['level'] }}</strong></p>
 {% endblock %}

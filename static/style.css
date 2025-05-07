@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #333;
+    color: #494444;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #333;
+    background-color: #487c4f;
     color: white;
     padding: 10px;
     display: flex;
@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
 }
 .logo {
-    height: 70px;
+    height: 80px;
 }
 nav a {
     color: white;
@@ -23,12 +23,13 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+    color: #b98f8f;
 }
 main {
     padding: 20px;
 }
 footer {
-    background-color: #eee;
+    background-color: #679473;
     text-align: center;
     padding: 10px;
 }
@@ -43,7 +44,7 @@ ul li a {
     padding: 8px;
 }
 ul li:hover {
-    background-color: #e0e0e0;
+    background-color: #6c8a83;
 }
 .products-list {
     display: flex;
